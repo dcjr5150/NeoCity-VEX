@@ -21,6 +21,62 @@
             "-fdiagnostics-color",
             "-std=gnu99",
             "-o",
+            "bin/lift.c.o",
+            "src/lift.c"
+        ],
+        "directory": "/Users/danielconlin/Documents/VexV5/Coretex_Proj1",
+        "file": "src/lift.c"
+    },
+    {
+        "arguments": [
+            "clang++",
+            "-c",
+            "-target",
+            "armv7ar-none-none-eabi",
+            "-isystem/usr/local/Cellar/arm-gcc-bin/7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/include",
+            "-isystem/usr/local/Cellar/arm-gcc-bin/7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/include-fixed",
+            "-isystem/usr/local/Cellar/arm-gcc-bin/7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/include",
+            "-isystem./include",
+            "-iquote./include/./",
+            "-mthumb",
+            "-mcpu=cortex-m3",
+            "-mlittle-endian",
+            "-Os",
+            "-ffunction-sections",
+            "-fsigned-char",
+            "-fomit-frame-pointer",
+            "-fsingle-precision-constant",
+            "-fdiagnostics-color",
+            "-std=gnu99",
+            "-o",
+            "bin/opcontrol.c.o",
+            "src/opcontrol.c"
+        ],
+        "directory": "/Users/danielconlin/Documents/VexV5/Coretex_Proj1",
+        "file": "src/opcontrol.c"
+    },
+    {
+        "arguments": [
+            "clang++",
+            "-c",
+            "-target",
+            "armv7ar-none-none-eabi",
+            "-isystem/usr/local/Cellar/arm-gcc-bin/7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/include",
+            "-isystem/usr/local/Cellar/arm-gcc-bin/7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/include-fixed",
+            "-isystem/usr/local/Cellar/arm-gcc-bin/7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/include",
+            "-isystem./include",
+            "-iquote./include/./",
+            "-mthumb",
+            "-mcpu=cortex-m3",
+            "-mlittle-endian",
+            "-Os",
+            "-ffunction-sections",
+            "-fsigned-char",
+            "-fomit-frame-pointer",
+            "-fsingle-precision-constant",
+            "-fdiagnostics-color",
+            "-std=gnu99",
+            "-o",
             "bin/auto.c.o",
             "src/auto.c"
         ],
@@ -77,10 +133,38 @@
             "-fdiagnostics-color",
             "-std=gnu99",
             "-o",
-            "bin/opcontrol.c.o",
-            "src/opcontrol.c"
+            "bin/chassis.c.o",
+            "src/chassis.c"
         ],
         "directory": "/Users/danielconlin/Documents/VexV5/Coretex_Proj1",
-        "file": "src/opcontrol.c"
+        "file": "src/chassis.c"
+    },
+    {
+        "arguments": [
+            "clang++",
+            "-c",
+            "-target",
+            "armv7ar-none-none-eabi",
+            "-isystem/usr/local/Cellar/arm-gcc-bin/7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/include",
+            "-isystem/usr/local/Cellar/arm-gcc-bin/7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/include-fixed",
+            "-isystem/usr/local/Cellar/arm-gcc-bin/7-2018-q2-update/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/include",
+            "-isystem./include",
+            "-iquote./include/./",
+            "-mthumb",
+            "-mcpu=cortex-m3",
+            "-mlittle-endian",
+            "-Os",
+            "-ffunction-sections",
+            "-fsigned-char",
+            "-fomit-frame-pointer",
+            "-fsingle-precision-constant",
+            "-fdiagnostics-color",
+            "-std=gnu99",
+            "-o",
+            "bin/claw.c.o",
+            "src/claw.c"
+        ],
+        "directory": "/Users/danielconlin/Documents/VexV5/Coretex_Proj1",
+        "file": "src/claw.c"
     }
 ]

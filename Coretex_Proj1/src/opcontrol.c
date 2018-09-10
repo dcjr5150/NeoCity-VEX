@@ -27,8 +27,25 @@
  * This task should never exit; it should end with some kind of infinite loop, even if empty.
  */
 void operatorControl() {
-	while (true) {
-		printf("Hello PROS User!\n");
-		delay(20);
+	  int power, turn;
+	  while (1) {
+	    power = joystickGetAnalog(1, 2); // vertical axis on left joystick
+	    turn = joystickGetAnalog(1, 1); // horizontal axis on left joystick
+	    chassisSet(power + turn, power - turn);
+
+	    clawSet(joystickGetAnalog(1, 4));
+
+	    // add the following logic:
+	    if(joystickGetDigital(1, 6, JOY_UP)) {
+	      liftSet(127); // pressing up, so lift should go up
+	    }
+	    else if(joystickGetDigital(1, 6, JOY_DOWN)) {
+	      liftSet(-127); // pressing down, so lift should go down
+	    }
+	    else {
+	      liftSet(0); // no buttons are pressed, stop the lift
+	    }
+
+	    delay(20);
+	  }
 	}
-}
