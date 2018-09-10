@@ -29,8 +29,8 @@
 void operatorControl() {
 	  int power, turn;
 	  while (1) {
-	    power = joystickGetAnalog(1, 2); // vertical axis on left joystick
-	    turn = joystickGetAnalog(1, 1); // horizontal axis on left joystick
+	    power = joystickGetAnalog(1, 1); // vertical axis on left joystick
+	    turn = joystickGetAnalog(1, 2); // horizontal axis on left joystick
 	    chassisSet(power + turn, power - turn);
 
 	    clawSet(joystickGetAnalog(1, 4));
