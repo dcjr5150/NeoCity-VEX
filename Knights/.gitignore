@@ -1,0 +1,5 @@
+.idea
+bin
+firmware
+.DS_Store
+.vscode
