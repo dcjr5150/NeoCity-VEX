@@ -33,7 +33,7 @@ void operatorControl() {
 	    turn = joystickGetAnalog(1, 2); // horizontal axis on left joystick
 	    chassisSet(power + turn, power - turn);//Testing 2
 
-	    clawSet(joystickGetAnalog(1, 4));
+	    clawSet(joystickGetAnalog(1, 4));//sets the claw to a position based on joystick location
 
 	    // add the following logic:
 	    if(joystickGetDigital(1, 6, JOY_UP)) {
